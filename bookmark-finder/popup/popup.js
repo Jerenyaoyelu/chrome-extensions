@@ -24,6 +24,9 @@ function generateBkList() {
 // function search
 
 // 获取网站favicon
+function getFavicon(url) {
+  return `https://s2.googleusercontent.com/s2/favicons?domain_url=${url}`;
+}
 
 function createItemWrapper(node) {
   const ul = document.createElement('ul');
@@ -39,6 +42,10 @@ function createItemWrapper(node) {
 function createItem(leaf) {
   const li = document.createElement('li');
   li.className = '__bk-item';
+  const img = document.createElement('img');
+  img.src = getFavicon(leaf.url);
+  img.className = '__bk-item-icon';
+  li.appendChild(img);
   const a = document.createElement('a');
   a.innerText = leaf.title;
   a.href = leaf.url;

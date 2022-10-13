@@ -1,7 +1,7 @@
 <html lang="zh_cn">
   <style>
     body {
-      width: 200px;
+      width: 300px;
       padding: 90px 10px 10px;
       position: relative;
       margin: 0;
@@ -10,7 +10,7 @@
       box-sizing: border-box;
     }
     .input {
-      width: 180px;
+      width: 280px;
       position: absolute;
       top: 40px;
       left: 10px;
@@ -20,6 +20,14 @@
       position: absolute;
       top: 0;
       left: 10px;
+    }
+
+    .__bk-item-icon {
+      width: 16px;
+      height: 16px;
+      object-fit: cover;
+      margin-right: 6px;
+      border-radius: 5px;
     }
 
     .__bk-list {
@@ -38,11 +46,17 @@
 
     .__bk-item {
       list-style: none;
-      margin: 6px 0;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
     }
     .__bk-item-name {
       color: rgb(35, 34, 34);
       text-decoration: none;
+      max-width: 85%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .__bk-item-name:hover {
       color: rgb(117, 117, 240);
