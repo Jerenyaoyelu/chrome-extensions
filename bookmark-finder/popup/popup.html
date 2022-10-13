@@ -1,0 +1,60 @@
+<html lang="zh_cn">
+  <style>
+    body {
+      width: 200px;
+      padding: 90px 10px 10px;
+      position: relative;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .input {
+      width: 180px;
+      position: absolute;
+      top: 40px;
+      left: 10px;
+    }
+
+    .__bk-title {
+      position: absolute;
+      top: 0;
+      left: 10px;
+    }
+
+    .__bk-list {
+      position: relative;
+    }
+
+    .__bk-list::before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: #c4c0c0;
+      position: absolute;
+      left: 0;
+      top: -10px;
+    }
+
+    .__bk-item {
+      list-style: none;
+      margin: 6px 0;
+    }
+    .__bk-item-name {
+      color: rgb(35, 34, 34);
+      text-decoration: none;
+    }
+    .__bk-item-name:hover {
+      color: rgb(117, 117, 240);
+    }
+    ul {
+      padding: 0;
+    }
+  </style>
+  <body>
+    <h3 class="__bk-title">Search Bookmark</h3>
+    <input autofocus class="input" id="__bk-input" type="text" />
+    <div class="__bk-list" id="__bk-list-container"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

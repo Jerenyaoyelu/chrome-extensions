@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "bookmark-finder",
+  "version": "0.0.0",
+  "description": "搜索以快速打开目标书签",
+  "action": {
+    "default_icon": "images/icon.png",
+    "default_title": "搜索书签",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": [
+    "bookmarks",
+    "tts"
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      },
+      "description": "Opens popup.html"
+    }
+  }
+}
